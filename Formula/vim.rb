@@ -56,7 +56,7 @@ class Vim < Formula
     # build from source. Please don't attempt to hardcode either.
     system "./configure", "--prefix=#{HOMEBREW_PREFIX}",
                           "--mandir=#{man}",
-                          "--enable-gui=gtk4",
+                          "--enable-gui=gtk3",
                           "--with-features=huge",
                           "--enable-multibyte",
                           "--with-tlib=ncurses",
