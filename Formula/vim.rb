@@ -58,6 +58,7 @@ class Vim < Formula
                           "--mandir=#{man}",
                           "--enable-gui=gtk3",
                           "--with-features=huge",
+                          "--with-client-server"
                           "--enable-multibyte",
                           "--with-tlib=ncurses",
                           "--with-compiledby=Homebrew",
