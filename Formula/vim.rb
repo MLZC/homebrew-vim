@@ -32,6 +32,9 @@ class Vim < Formula
   depends_on "perl"
   depends_on "python@3.10"
   depends_on "ruby"
+  depends_on "gtk+3"
+  depends_on "gtk+"
+  depends_on "gtk-mac-integration"
 
   conflicts_with "ex-vi",
     because: "vim and ex-vi both install bin/ex and bin/view"
@@ -59,6 +62,7 @@ class Vim < Formula
                           "--enable-gui=gtk3",
                           "--with-features=huge",
                           "--with-client-server",
+                          "--disable-darwin",
                           "--enable-multibyte",
                           "--with-tlib=ncurses",
                           "--with-compiledby=Homebrew",
